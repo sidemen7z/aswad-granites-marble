@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Splash />
           <Cursor />
           <Header />
-          <main className="min-h-screen">{children}</main>
+          <main className="min-h-screen pb-[62px] md:pb-0">{children}</main>
           <Footer />
           <ContactBar />
         </Providers>

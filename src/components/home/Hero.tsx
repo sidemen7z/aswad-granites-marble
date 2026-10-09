@@ -45,7 +45,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
-          className="ml-2 shrink-0 text-[10px] font-bold uppercase leading-relaxed tracking-[0.3em] text-faint"
+          className="ml-2 hidden shrink-0 text-[10px] font-bold uppercase leading-relaxed tracking-[0.3em] text-faint sm:block"
         >
           40+ Granite colours
           <br />
@@ -117,8 +117,8 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* floating material selector — white card overlapping the image edge */}
-          <div className="z-10 mx-5 mt-4 sm:mx-10 lg:absolute lg:-bottom-9 lg:right-10 lg:mx-0 lg:mt-0">
+          {/* floating material selector — desktop only, overlaps the image edge */}
+          <div className="z-10 mx-5 mt-4 hidden sm:mx-10 lg:absolute lg:-bottom-9 lg:right-10 lg:mx-0 lg:mt-0 lg:block">
             <div className="flex items-center gap-4 overflow-x-auto border border-line bg-white px-4 py-3 shadow-[0_18px_40px_rgba(17,17,17,0.14)] lg:overflow-visible">
               <p className="hidden shrink-0 text-[10px] font-extrabold uppercase leading-relaxed tracking-[0.25em] text-ink sm:block">
                 Select
@@ -142,8 +142,8 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* narrow editorial rail */}
-        <aside className="px-5 pb-10 pt-10 sm:px-10 lg:col-span-3 lg:border-l lg:border-line lg:px-8 lg:pb-0 lg:pt-4">
+        {/* narrow editorial rail — desktop only */}
+        <aside className="hidden px-5 pb-10 pt-10 sm:px-10 lg:col-span-3 lg:block lg:border-l lg:border-line lg:px-8 lg:pb-0 lg:pt-4">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}

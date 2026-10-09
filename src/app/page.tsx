@@ -14,16 +14,6 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <Marquee
-        items={[
-          "Premium Natural Stone",
-          "Kondhwa Budruk, Pune",
-          "40+ Granite Colours",
-          "Custom Countertops",
-          "4.2 ★ Google Rating",
-          "Call +91 96865 72109",
-        ]}
-      />
       <ArtOfStone />
       <Materials />
       <NavyFeature />
@@ -35,6 +25,16 @@ export default function Home() {
       <Estimator />
       <Testimonials />
       <Faq />
+      <Marquee
+        items={[
+          "Premium Natural Stone",
+          "Kondhwa Budruk, Pune",
+          "40+ Granite Colours",
+          "Custom Countertops",
+          "4.2 star Google Rating",
+          "Call +91 96865 72109",
+        ]}
+      />
       <EditorialCta />
     </div>
   );
